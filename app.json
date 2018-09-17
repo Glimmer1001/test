@@ -1,0 +1,41 @@
+{
+    "$schema": "https://raw.githubusercontent.com/qiu8310/minapp/master/schema/page.json",
+    "pages": [
+        "pages/about/about",
+        "pages/weekly/weekly",
+        "pages/details/details"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "",
+        "navigationStyle": "default|custom",
+        "backgroundColor": "#ffffff",
+        "backgroundTextStyle": "dark|light",
+        "backgroundColorTop": "#ffffff",
+        "backgroundColorBottom": "#ffffff",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 50
+    },
+    "tabBar": {
+        "color": "",
+        "selectedColor": "",
+        "backgroundColor": "write",
+        "position": "bottom",
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/weekly/weekly",
+                "text": "电影推荐",
+                "iconPath": "images/icon/home.png",
+                "selectedIconPath": "images/icon/home2.png"
+            },{
+                "pagePath": "pages/about/about",
+                "text": "关于",
+                "iconPath": "images/icon/information.png",
+                "selectedIconPath": "images/icon/information1.png"
+            }
+        ]
+    }
+    
+}

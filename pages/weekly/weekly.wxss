@@ -1,0 +1,33 @@
+/*
+  此文件是由模板文件 ".dtpl/component/$rawModuleName.$style.dtpl" 生成的，你可以自行修改模板
+
+  注意：文件为空，编译时不会生成新文件
+*/
+.movie-swiper{
+  height: 90vh;
+}
+.movie-image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.movie-card{
+  height: 100%;
+  width: 100%;
+  background-color: #eee;
+  margin: 20rpx;
+  position: relative;
+}
+.movie-text{
+  height: 50vh;
+  background-color: #eee;
+  width: 500rpx;
+}
+.return-button{
+  position: absolute;
+  right: 40rpx;
+  top: 40rpx;
+  font-size: 26rpx;
+  font-style: italic;
+  border: 1px solid #000;
+  border-radius: 10%;
+}

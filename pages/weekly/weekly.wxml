@@ -1,0 +1,26 @@
+<!--
+  此文件是由模板文件 ".dtpl/page/$rawModuleName.wxml.dtpl" 生成的，你可以自行修改模板
+
+  注意：
+  1. 如果没有语法高亮，且你使用的是 vscode 编辑器的话，建义在 vscode 插件库中安装 minapp-vscode 插件
+-->
+<view class="" hover-class="none" hover-stop-propagation="false">
+  <swiper class="movie-swiper" indicator-dots="{{true}}" autoplay="{{false}}" previous-margin="50rpx" next-margin="50rpx" current="{{currentIndex}}">
+     <swiper-item class="" wx:for="{{weeklymovielist}}">
+      <view bind:tap="f1" class="container movie-card" hover-class="none" hover-stop-propagation="false" data-movie-id="{{item.id}}">
+        <image class="movie-image" src="{{item.imagepath}}" mode="widthFix"></image>
+        <view class="container movie-text">
+          <text class="" selectable="false" space="false" decode="false">
+            第{{index+1}}周：{{item.name}}
+          </text>
+          <text class="" selectable="false" space="false" decode="false">
+            点评：{{item.comment}}
+          </text>
+        </view>
+        <text wx:if='{{index < (weeklymovielist.length - 1)}}' catch:tap="f0" class="return-button" selectable="false" space="false" decode="false">
+          返回本周
+        </text>
+      </view>
+     </swiper-item>
+  </swiper>
+</view>
